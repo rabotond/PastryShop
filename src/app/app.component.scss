@@ -1,0 +1,67 @@
+#toolbar {
+  z-index: 1;
+  position: fixed;
+  background-color: transparent;
+  display: flex;
+  flex-flow: row-reverse;
+}
+
+#myVideo {
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+a {
+  margin-left: 25px;
+}
+
+#video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#products {
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url(./../assets/depositphotos_242420482_l-2015.jpg);
+}
+
+.product-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card {
+  top: 200px;
+  height: 300px;
+  width: 300px;
+  margin-left: 25px;
+  background-color: rgb(233, 227, 218);
+}
+
+.product-card-image {
+  height: 250px;
+  width: 300px;
+  margin: auto;
+}
+
+#contacts {
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url(./../assets/thought-catalog-wyEinDRV88I-unsplash.jpg);
+  background-size: cover;
+}
+
+.contact-label {
+  position: relative;
+  top: 150px;
+  left: 10%;
+  width: 600px;
+  height: 600px;
+  background-color: transparent;
+  font-size: xx-large;
+  font-family: fantasy;
+}

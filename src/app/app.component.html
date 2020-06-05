@@ -1,1 +1,58 @@
-<mat-checkbox>Check me!</mat-checkbox>
+<mat-toolbar id="toolbar">
+  <a mat-stroked-button [ngxScrollTo]="'#contacts'" target="_blank">Contacts</a>
+  <a mat-stroked-button [ngxScrollTo]="'#products'" target="_blank">Products</a>
+  <a mat-stroked-button [ngxScrollTo]="'#video'" target="_blank">Video</a>
+</mat-toolbar>
+<section id="video">
+  <video autoplay muted loop id="myVideo">
+    <source src="./../assets/videoplayback.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+</section>
+<section id="products">
+  <div class="product-cards" data-aos="fade-up">
+    <mat-card class="product-card">
+      <mat-card-header>
+        <mat-card-title>Brownie</mat-card-title>
+      </mat-card-header>
+      <img
+        class="product-card-image"
+        mat-card-image
+        src="./../assets/brownie.jpg"
+        alt="Photo of a brownie"
+      />
+    </mat-card>
+    <mat-card class="product-card"
+      ><mat-card-header>
+        <mat-card-title>Lemon Pie</mat-card-title>
+      </mat-card-header>
+      <img
+        class="product-card-image"
+        mat-card-image
+        src="./../assets/pie.jfif"
+        alt="Photo of a brownie"
+    /></mat-card>
+    <mat-card class="product-card"
+      ><mat-card-header>
+        <mat-card-title>Eszerházi</mat-card-title>
+      </mat-card-header>
+      <img
+        class="product-card-image"
+        mat-card-image
+        src="./../assets/eszerhazi.jpg"
+        alt="Photo of a brownie"
+    /></mat-card>
+  </div>
+</section>
+
+<section id="contacts">
+  <div class="contact-label" data-aos="fade-up">
+    <h2>Elérhetőségek</h2>
+    <p>
+      Cím: Budapest, Vihar u. 12, 1035
+    </p>
+    <p>
+      Nyitva tartás: hétfő - péntek 10:00–18:00
+    </p>
+  </div>
+</section>
