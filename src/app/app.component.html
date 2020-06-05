@@ -4,7 +4,7 @@
   <a mat-stroked-button [ngxScrollTo]="'#video'" target="_blank">Video</a>
 </mat-toolbar>
 <section id="video">
-  <video autoplay muted loop id="myVideo">
+  <video video loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
     <source src="./../assets/videoplayback.mp4" type="video/mp4" />
     Your browser does not support HTML5 video.
   </video>
