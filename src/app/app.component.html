@@ -10,38 +10,14 @@
   </video>
 </section>
 <section id="products">
-  <div class="product-cards" data-aos="fade-up">
-    <mat-card class="product-card">
+  <div class="product-cards" data-aos="zoom-in">
+    <mat-card class="product-card" *ngFor="let cake of cakes ">
       <mat-card-header>
-        <mat-card-title>Brownie</mat-card-title>
+        <mat-card-title>{{cake.name}}</mat-card-title>
       </mat-card-header>
-      <img
-        class="product-card-image"
-        mat-card-image
-        src="./../assets/brownie.jpg"
-        alt="Photo of a brownie"
-      />
+      <img class="product-card-image" mat-card-image src="{{cake.img_path}}" alt="Photo of a brownie"
+        (click)="openDialog()" />
     </mat-card>
-    <mat-card class="product-card"
-      ><mat-card-header>
-        <mat-card-title>Lemon Pie</mat-card-title>
-      </mat-card-header>
-      <img
-        class="product-card-image"
-        mat-card-image
-        src="./../assets/pie.jfif"
-        alt="Photo of a brownie"
-    /></mat-card>
-    <mat-card class="product-card"
-      ><mat-card-header>
-        <mat-card-title>Eszerházi</mat-card-title>
-      </mat-card-header>
-      <img
-        class="product-card-image"
-        mat-card-image
-        src="./../assets/eszerhazi.jpg"
-        alt="Photo of a brownie"
-    /></mat-card>
   </div>
 </section>
 

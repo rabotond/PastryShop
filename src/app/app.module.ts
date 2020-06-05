@@ -11,9 +11,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
+import { RecipeComponent } from './recipe/recipe.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, RecipeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -23,6 +25,7 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
     MatCardModule,
     FlexLayoutModule,
     MatButtonModule,
+    MatDialogModule,
     ScrollToModule.forRoot(),
     AnimateOnScrollModule.forRoot(),
   ],
